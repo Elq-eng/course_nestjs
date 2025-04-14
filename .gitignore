@@ -3,6 +3,10 @@
 /node_modules
 /build
 
+seccion7/pokedex/mongo/
+
+**/mongo/
+
 # Logs
 logs
 *.log

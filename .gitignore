@@ -1,11 +1,17 @@
 # compiled output
-/dist
-/node_modules
-/build
+**/dist
+**/node_modules
+**/build
 
-seccion7/pokedex/mongo/
+# Ignore db folders inside sections
+seccion7/**/mongo/
+seccion10/**/postgres/
+seccion10/**/node_modules/
 
+# Ignore env files
+**/*.env
 **/mongo/
+**/postgres/
 
 # Logs
 logs

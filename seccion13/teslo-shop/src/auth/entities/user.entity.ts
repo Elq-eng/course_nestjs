@@ -1,4 +1,5 @@
-import { BeforeInsert, BeforeUpdate, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+// import { Produc } from "src/produc/entities";
+import { BeforeInsert, BeforeUpdate, Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 
 
@@ -31,6 +32,12 @@ export class User {
     default: ['user']
   })
   roles:string[]
+
+  // @OneToMany(
+  //   () => Produc,
+  //   ( product ) => product.user
+  // )
+  // product: Produc
 
   @BeforeInsert()
   checkFieldsBeforeInsert(){

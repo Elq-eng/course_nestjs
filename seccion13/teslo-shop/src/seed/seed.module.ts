@@ -3,6 +3,7 @@ import { SeedService } from './seed.service';
 import { SeedController } from './seed.controller';
 import { ProducModule } from 'src/produc/produc.module';
 
+
 @Module({
   controllers: [SeedController],
   providers: [SeedService],
